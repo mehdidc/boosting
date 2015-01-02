@@ -1,0 +1,5 @@
+#!/bin/sh
+# 1 : model
+# 2 : where to test
+# 3 : nb iterations
+multiboost --fileformat arff --test $2 $1 $3

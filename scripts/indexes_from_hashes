@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+
+import numpy as np
+from marff import read_arff
+import sys
+from ndhash import ndhash
+# arg 1 : arff file
+# arg 2 : hashes
+
+header, data = read_arff(sys.argv[1])
+
+data_index_from_hash = {}
+for i, d in enumerate(data):
+    data_index_from_hash[ndhash(np.array(d[:-1]))] = i
+
+for h in open(sys.argv[2], "r").readlines():
+    h = h[:-1]
+    print data_index_from_hash[h]

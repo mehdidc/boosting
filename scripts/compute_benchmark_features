@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# arg1 : data folder
+python2.7 /exp/appstat/cherti/Projects/Boosting/PythonLib/ILC_experiment.py run-app --train $1/train.arff --test $1/test.arff  --output-folder $1 -b
