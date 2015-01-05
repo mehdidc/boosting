@@ -1,2 +1,0 @@
-#!/bin/sh
-numpy_op mean std

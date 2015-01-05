@@ -1,9 +1,0 @@
-#!/bin/sh
-total=0
-# args : multiboost results file
-for v in $*
-do
-echo $v
-cat $v | awk '{print $3}'| numpy_op min
-echo argmin `cat $v | awk '{print $3}'| numpy_op argmin`
-done

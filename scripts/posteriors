@@ -1,6 +1,0 @@
-#!/bin/sh
-#arg 1 model
-# arg2 test file
-# arg3 posteriors output
-# arg4 iteration
-multiboost --posteriors $2 $1 $3 $4 --fileformat arff

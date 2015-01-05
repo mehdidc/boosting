@@ -1,2 +1,0 @@
-#!/bin/sh
-multiboost --traintest $1 $2 3000 --fileformat arff --baselearnertype TreeLearner 100 --outputinfo results.dta --shypname model
